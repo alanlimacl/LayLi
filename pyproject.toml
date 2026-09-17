@@ -1,0 +1,25 @@
+[project]
+name = "layli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alan Lima", email = "alancoite123@hotmail.com"},
+    { name = "Hugo Layme", email = "hugolayme153@gmail.com"}
+      
+]
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "fastapi>=0.141.1",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.0.52",
+    "uvicorn>=0.52.4",
+]
+
+[project.scripts]
+layli = "layli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
